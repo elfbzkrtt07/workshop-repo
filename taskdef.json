@@ -1,0 +1,24 @@
+{
+  "family": "devops-workshop-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "",
+  "taskRoleArn": "",
+  "containerDefinitions": [
+    {
+      "name": "web-app",
+      "image": "IMAGE1_NAME",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512"
+}
